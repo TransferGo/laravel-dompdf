@@ -40,10 +40,6 @@ class ServiceProvider extends IlluminateServiceProvider {
 
         if (file_exists($config_file)) {
             require_once $config_file;
-        } else {
-            throw new Exception(
-                "$config_file cannot be loaded, please configure correct config file (config.php: config_file)"
-            );
         }
         
         $this->app->bind('dompdf', function ($app) {
