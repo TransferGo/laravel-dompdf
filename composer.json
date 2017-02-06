@@ -1,5 +1,5 @@
 {
-    "name": "barryvdh/laravel-dompdf",
+    "name": "transfergo/laravel-dompdf",
     "description": "A DOMPDF Wrapper for Laravel",
     "license": "MIT",
     "keywords": ["laravel", "dompdf", "pdf"],
@@ -7,12 +7,16 @@
         {
             "name": "Barry vd. Heuvel",
             "email": "barryvdh@gmail.com"
+        },
+        {
+            "name": "Giedrius Koksta",
+            "email": "giedrius@transfergo.com"
         }
     ],
     "require": {
         "php": ">=5.3.0",
         "illuminate/support": "~4.0",
-        "dompdf/dompdf": "0.6.*"
+        "dompdf/dompdf": "0.7.*"
     },
 
     "autoload": {
@@ -22,7 +26,7 @@
     },
     "extra": {
         "branch-alias": {
-            "dev-master": "0.4-dev"
+            "dev-master": "0.4.9"
         }
     }
 }
