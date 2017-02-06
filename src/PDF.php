@@ -57,6 +57,7 @@ class PDF{
         $this->orientation = $this->config->get('laravel-dompdf::orientation') ?: 'portrait';
 
         $this->dompdf = new \Dompdf\Dompdf();
+        $this->dompdf->getOptions()->set("isRemoteEnabled", true);
         $this->dompdf->set_base_path(realpath($publicPath));
     }
 
